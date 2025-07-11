@@ -37,7 +37,7 @@ resource "digitalocean_droplet" "server" {
   region    = var.region
   size      = var.size
   count     = var.droplet_count
-  user_data = file("setup.sh")
+  #user_data = file("setup.sh")
   vpc_uuid  = digitalocean_vpc.vpc.id
   ssh_keys = [data.digitalocean_ssh_key.default.fingerprint]
 

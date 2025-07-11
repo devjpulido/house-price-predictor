@@ -2,10 +2,11 @@
 
 ##################
 
-export GITHUB_ACCOUNT={your_github_account}
-git clone https://github.com/$GITHUB_ACCOUNT/devops-capstone-project.git
-cd devops-capstone-project
-bash ./bin/setup.sh
+export GITHUB_ACCOUNT=devjpulido
 
-git config --local user.name "{your GitHub name here}"
-git config --local user.email {your GitHub email here}
+git clone https://github.com/$GITHUB_ACCOUNT/house-price-predictor.git -b develop
+cd house-price-predictor
+bash ./setup/installers/setup.sh
+
+git config --local user.name "Juan Pulido"
+git config --local user.email "jpul0007@student.monash.edu"
