@@ -16,3 +16,6 @@ sudo apt-get update
 
 # Install Docker packages:
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+# Check docker compose version:
+docker compose version
