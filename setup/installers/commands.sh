@@ -47,7 +47,6 @@ python -m jupyterlab --allow-root # Run as root
 
 python -m jupyterlab --ip=0.0.0.0 --port=8888 --no-browser --allow-root
 
-http://127.0.0.1:8888/lab?token=25b83fd22e89b56257c848f7812dba93d117da022b0f4148
-http://170.64.197.222:8888/lab?token=0d84c52bb3c60c2a12c0eeb1cb2c9a4eb02b420cb2ffaf38
+sudo ufw allow 8888
 
-http://127.0.0.1:8888/lab?token=0d84c52bb3c60c2a12c0eeb1cb2c9a4eb02b420cb2ffaf38
+http://170.64.197.222:8888/lab?token=0d84c52bb3c60c2a12c0eeb1cb2c9a4eb02b420cb2ffaf38
