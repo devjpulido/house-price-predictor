@@ -1,7 +1,6 @@
 services:
   fastapi:
     image: neojpulido/fastapi:dev
-    #container_name: fastapi_dev
     build:
       context: .
       dockerfile: Dockerfile
@@ -10,7 +9,6 @@ services:
 
   streamlit:
     image: neojpulido/streamlit:dev
-    #container_name: streamlit_dev
     build:
       context: ./streamlit_app
       dockerfile: Dockerfile
