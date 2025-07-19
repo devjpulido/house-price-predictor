@@ -88,3 +88,7 @@ docker run -idtP fastapi
 docker ps -l
 docker run --rm -it fastapi bash
 docker rm -f 3928e888c4de
+
+
+docker image build -t neojpulido/streamlit:v1 .
+docker run -idtP neojpulido/streamlit:v1
