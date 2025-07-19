@@ -92,3 +92,17 @@ docker rm -f 3928e888c4de
 
 docker image build -t neojpulido/streamlit:v1 .
 docker run -idtP neojpulido/streamlit:v1
+docker image push neojpulido/streamlit:v1
+
+
+docker image build -t neojpulido/streamlit:dev .
+docker image build -t neojpulido/fastapi:dev .
+
+docker image push neojpulido/streamlit:dev
+docker image push neojpulido/fastapi:dev
+
+docker compose up -d
+docker compose ps
+docker compose stop
+docker compose start
+docker compose down
