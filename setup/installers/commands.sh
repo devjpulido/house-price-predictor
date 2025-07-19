@@ -73,3 +73,18 @@ python src/features/engineer.py   --input data/processed/cleaned_house_data.csv 
 # Train your model and log everything to MLflow
 #################################################
 python src/models/train_model.py   --config configs/model_config.yaml   --data data/processed/featured_house_data.csv   --models-dir models   --mlflow-tracking-uri http://localhost:5555
+
+
+###############################################
+# Step 4: Build the Docker image for the API
+# within the root of the repository
+#################################################
+touch Dockerfile
+
+docker image build -t fastapi .
+docker image ls
+docker image history fastapi
+docker run -idtP fastapi
+docker ps -l
+docker run --rm -it fastapi bash
+docker rm -f 3928e888c4de
