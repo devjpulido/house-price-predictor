@@ -1,13 +1,16 @@
 name: "MLOps CI Workflow"
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main 
+#on:
+#  push:
+#    branches:
+#      - main
+#  pull_request:
+#    branches:
+#      - main 
 
+on:
+  workflow_dispatch: {}
+  
 jobs:
   e2e_mlops_ci_workflow:
     runs-on: ubuntu-latest
