@@ -28,7 +28,7 @@ jobs:
       
       - name: Run Data Processing
         run: |
-          python src/data/run_processing.py \ 
+          python src/data/run_processing.py \
             --input data/raw/house_data.csv \
             --output data/processed/cleaned_house_data.csv
         
