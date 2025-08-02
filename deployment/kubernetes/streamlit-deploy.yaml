@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: streamlit
+  name: streamlit
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: streamlit
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: streamlit
+    spec:
+      containers:
+      - image: neojpulido/streamlit:v4
+        name: streamlit
+        ports:
+        - containerPort: 8501
+        resources: {}
+status: {}

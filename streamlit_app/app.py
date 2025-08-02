@@ -168,7 +168,7 @@ with col2:
     st.markdown('</div>', unsafe_allow_html=True)
 
 # Fetch version, hostname, and IP address
-version = os.getenv("APP_VERSION", "1.0.0")  # Default version if not set in environment
+version = os.getenv("APP_VERSION", "4.0.0")  # Default version if not set in environment
 hostname = socket.gethostname()
 ip_address = socket.gethostbyname(hostname)
 
