@@ -6,7 +6,7 @@ metadata:
     app: model
   name: model
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: model
@@ -18,9 +18,15 @@ spec:
         app: model
     spec:
       containers:
-      - image: neojpulido/fastapi:v2
-        name: fastapi
+      - image: neojpulido/house-price-model:latest
+        name: house-price-model
         ports:
         - containerPort: 8000
-        resources: {}
+        resources:
+          requests:
+            cpu: "50m"
+            memory: "64Mi"
+          limits:
+            cpu: "100m"
+            memory: "128Mi"
 status: {}
