@@ -6,7 +6,7 @@ metadata:
     app: streamlit
   name: streamlit
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: streamlit
@@ -18,7 +18,7 @@ spec:
         app: streamlit
     spec:
       containers:
-      - image: neojpulido/streamlit:v4
+      - image: neojpulido/streamlit:latest
         name: streamlit
         ports:
         - containerPort: 8501
