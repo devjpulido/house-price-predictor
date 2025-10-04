@@ -13,7 +13,6 @@ spec:
   triggers:
     - type: prometheus
       metadata:
-        #serverAddress: http://prom-kube-prometheus-stack-prometheus.monitoring.svc:9090
         serverAddress: http://prometheus-kube-prometheus-stack.monitoring.svc:9090
         metricName: fastapi_latency_p95
         query: |
